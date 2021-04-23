@@ -1,0 +1,1786 @@
+*{
+    margin: 0;
+}
+$yellow: #FFB84B;
+$black: #000000;
+$white: #FFFFFF;
+
+@mixin responsive($brakepoint) {
+    @if$brakepoint == tablets_min{
+        @media only screen and (max-width: 768px) {@content};
+    }
+    @if$brakepoint == tablets{
+        @media only screen and (min-width: 768px) {@content};
+    }
+    @if$brakepoint == pc{
+        @media only screen and (min-width: 992px) {@content};
+    }
+    @if$brakepoint == large_pc{
+        @media only screen and (min-width: 1200px) {@content};
+    }
+    @if$brakepoint == very_large_pc{
+        @media only screen and (min-width: 1210px) {@content};
+    }
+}
+
+body{
+    font-family: 'Rajdhani', sans-serif;
+}
+.header{
+    height: 100px;
+    max-width: 360px;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    @include responsive(tablets){
+        max-width: 768px;
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include responsive(large_pc){
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+        height: 180px;
+        width: 500px;
+        margin-left: 0px;
+    }
+}
+.header_main{
+    height: 100px;
+    max-width: 360px;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    @include responsive(tablets){
+        max-width: 768px;
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include responsive(large_pc){
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: 300px;
+        height: 0px;
+        width: 500px;
+        margin-left: 0px;
+    }
+}
+.block{
+    &_apply{
+        height: 480px;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        @include responsive(tablets){
+            max-width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+        }
+        @include responsive(large_pc){
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 600px;
+        }
+    }
+    &_tasks{
+        height: 600px;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        @include responsive(tablets){
+            max-width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 600px;
+        }
+        @include responsive(large_pc){
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 540px;
+        }
+    }
+    &_benefit{
+        height: 400px;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        @include responsive(tablets){
+            max-width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+        }
+        @include responsive(large_pc){
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 450px;
+        }
+    }
+    &_whoweare{
+        height: 540px;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        @include responsive(tablets){
+            max-width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 540px;
+        }
+        @include responsive(large_pc){
+            height: 600px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 625px;
+        }
+    }
+    &_carousel{
+        height: 540px;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        @include responsive(tablets){
+            max-width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 540px;
+        }
+        @include responsive(large_pc){
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 480px;
+        }
+    }
+    &_comein{
+        height: 600px;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        @include responsive(tablets){
+            max-width: 768;
+            margin-left: auto;
+            margin-right: auto;
+            height: 600px;
+        }
+        @include responsive(large_pc){
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+        }
+    }
+    
+}
+
+#block_form_page_1{
+    height: 1560px;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    @include responsive(tablets){
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 800px;
+    }
+    @include responsive(large_pc){
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 800px;
+    }
+}
+#block_form_page_2{
+    display:none;
+    height: 1025px;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    .name_block_ambasador_sign_in{
+        visibility: hidden;
+        height: 0px;
+        max-width: 0px;
+        line-height: 0px;
+        float: left;
+        width: 0px;
+        color: $yellow;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: left;
+        h1{
+        color: $black;
+        font-size: 0px;
+        p{  
+            color: $black;
+        }
+    }
+    }
+    @include responsive(tablets){
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 800px;
+    }
+    @include responsive(large_pc){
+        max-width: 1200px;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 800px;
+        .name_block_ambasador_sign_in{
+            visibility: visible;
+            line-height: 40px;
+            float: left;
+            width: 460px;
+            color: $yellow;
+            margin-left: 0px;
+            margin-right: 104px;
+            margin-top: 104px;
+            margin-bottom: 0px;
+            text-align: left;
+            h1{
+                color: $black;
+                font-size: 30px;
+            }
+            p{  
+                color: $black;
+            }
+        }
+    }
+}
+.footer{
+    height: 350px;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    @include responsive(tablets){
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 350px;
+    }
+    @include responsive(large_pc){
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 280px;
+    }
+}
+.logo_main{
+    margin: 50px 40px 0px 40px;
+    position: static;
+    @include responsive(tablets){
+        margin: 50px 240px 0px 240px;
+    }
+    @include responsive(large_pc){
+        margin: 80px 40px 0px 104px;
+        width: 350px;
+    }
+}
+.logo_sign_in{
+    margin: 50px 40px 0px 40px;
+    position: static;
+    @include responsive(tablets){
+        margin: 50px 240px 0px 240px;
+    }
+    @include responsive(large_pc){
+        margin: 104px 40px 0px 104px;
+        width: 350px;
+    }
+}
+.logo_footer{
+    margin: 90px 100px 0px 82px;
+    position: static;
+    img{
+        width: 172px;
+        height: auto;
+    }
+    @include responsive(tablets){
+        margin: 90px 100px 0px 300px;
+    }
+    @include responsive(large_pc){
+        float: left;
+        margin: 155px 100px 0px 104px;
+    }
+}
+p{
+    font-size: 15px;
+}
+strong{
+    color: $yellow;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    width: auto;
+    color: $yellow;
+}
+h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+em{
+    font-style: normal;
+    color: $yellow;
+    font-weight: 600;
+}
+li{
+    font-size: 15px;
+    list-style: none; /* Убираем исходные маркеры */
+    background: url(images/logo/dot.svg) no-repeat 0 3px; /* Параметры фона */
+    padding-left: 30px; /* Смещаем текст вправо */ 
+    margin-bottom: 25px;
+    @include responsive(large_pc){
+        background: url(images/logo/dot.svg) no-repeat 0 5px; /* Параметры фона */
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+}
+#are_you_student{
+    margin-bottom: 45px;
+    @include responsive(large_pc){
+        margin-bottom: 40px;
+    }
+
+}
+
+
+i{
+    font-style: normal;
+    font-weight: 600;
+}
+.list_header{
+    margin-top: 80px;
+    @include responsive(tablets){
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    @include responsive(large_pc){
+        margin-right: 0px;
+        margin-top: 222px;
+        margin-left: 105px;
+        width: 640px;
+        ul{
+            padding-left: 0px;
+        }
+    }
+}
+.name_block{
+    width: auto;
+    color: $yellow;
+    margin-left: 65px;
+    margin-top: 100px;
+    @include responsive(tablets){
+        margin-top: 0px;
+        margin-left: 270px;
+    }
+    @include responsive(large_pc){
+        margin-left: 410px;
+        margin-top: 30px;
+        h2{
+            font-size: 30px;
+        }
+    }
+}
+.name_block_tasks{
+    width: auto;
+    color: $yellow;
+    margin-left: 65px;
+    margin-top: 0px;
+    @include responsive(tablets){
+        margin-left: 250px;
+    }
+    @include responsive(large_pc){
+        margin-left: 410px;
+        margin-top: 30px;
+        h2{
+            font-size: 30px;
+        }
+    }
+}
+.btn_login{
+    margin-left: 74px;
+    margin-right: 74px;
+    margin-top: 70px;
+    a{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 40px;
+        background-color: $white;
+        color: $yellow;
+        border: 3px solid $yellow;
+        border-color: $yellow;
+        text-decoration: none;
+        padding: 14px 45px 12px 45px;
+        border-radius: 100px;
+        &:hover{
+            background-color: $yellow;
+            color:$white; 
+        }
+
+    }
+    @include responsive(tablets){
+        margin-top: 100px;
+        margin-left: 270px
+    }
+
+    @include responsive(large_pc){
+        margin-left: 308px;
+        margin-right: 74px;
+        margin-top: 70px;
+        width: 340px;
+        float: left;
+        a{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 40px;
+            background-color: $white;
+            color: $yellow;
+            border: 3px solid $yellow;
+            border-color: $yellow;
+            text-decoration: none;
+            padding: 14px 45px 12px 45px;
+            border-radius: 100px;
+            &:hover{
+                background-color: $yellow;
+                color:$white; 
+            }
+    }   }
+
+}
+
+.btn_next{
+    margin-left: 74px;
+    margin-right: 74px;
+    margin-top: 70px;
+    float: left;
+    a{  
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 40px;
+        background-color: $yellow;
+        color: $white;
+        border: 3px solid $yellow;
+        border-color: $yellow;
+        text-decoration: none;
+        padding: 14px 74px 12px 74px;
+        border-radius: 100px;
+        &:hover{
+            background-color: $yellow;
+            color:$white; 
+        }
+
+    }
+    @include responsive(tablets){
+        margin-left: 0px;
+        margin-right: 170px;
+        margin-top: 20px;
+        float: right;
+        padding-right: 104px;
+        padding-bottom: 44px;
+    }
+    @include responsive(large_pc){
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 20px;
+        float: right;
+        padding-right: 104px;
+        padding-bottom: 44px;
+    }
+    @include responsive(very_large_pc){
+        margin-top: 100px;
+        padding-right: 0px;
+        padding-bottom: 80px;
+    }
+}
+.text_header{
+    margin-left: 16px;
+    margin-right: 16px;
+    @include responsive(tablets){
+        margin-left: 90px;
+        margin-right: 100px;
+    }
+    @include responsive(large_pc){
+        margin-right: 0px;
+        margin-left: 105px;
+        width: 640px;
+        float: left;
+        p{
+            font-size: 20px;
+        }
+    }
+}
+
+.numbr_image{
+    max-width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    @include responsive(large_pc){
+        max-width: 150px;
+        img{
+            height: 140px;
+            width: auto;
+        }
+    }
+}
+.social_image{
+    max-width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    @include responsive(large_pc){
+        max-width: 150px;
+        img{
+            height: 53px;
+            width: auto;
+        }
+    }
+}
+.footer_numbers{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 80px;
+    width: 210px;
+    @include responsive(tablets){
+        margin-left: 285px;
+    }
+
+    @include responsive(large_pc){
+        text-align: left;
+        display: flex;
+        float: right;
+        margin-top: 150px;
+        margin-left: 70px;
+        margin-right: 104px;
+        width: 210px;
+        img{
+            height: 50px;
+            width: auto;
+        }
+        
+    }
+}
+.footer_numbers_1200{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 80px;
+    width: 210px;
+    @include responsive(large_pc){
+        margin-right: 104px;
+        float: left;
+        
+    }
+}
+.radio_button{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+//Page 1
+
+.number_text_tasks{
+    margin-top: 45px;
+    @include responsive(large_pc){
+        margin-left: 50px;
+        margin-top: 100px;
+    }
+}
+.sector_number_text_tasks{
+    display: block;
+    @include responsive(large_pc){
+        display: flex;
+    }
+
+}
+.number_text{
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    @include responsive(tablets){
+        margin-top: 30px;
+        margin-left: 28px;
+        margin-right: 40px;
+        text-align: center;
+    }
+    @include responsive(large_pc){
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: left;
+        margin-top: 25px;
+        width: 260px;
+        p{
+            font-size: 20px;
+        }
+    }
+}
+.list_benefit{
+    margin-top: 50px;
+    margin-left: 17px;
+    margin-right: 22px;
+    ul{
+        padding-left: 0px;
+    }
+    @include responsive(tablets){
+        margin-left: 118px;
+        margin-right: 118px;
+    }
+    @include responsive(large_pc){
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 80px;
+        ul{
+            padding-left: 0px;
+            display: flex;
+
+        }
+    }
+}
+.whoweare_image{
+    margin-top: 50px;
+    margin-left: 52px;
+    img{
+        height: 268px;
+        width: auto;
+    }
+    @include responsive(tablets){
+        margin-left: 250px;
+    }
+    @include responsive(large_pc){
+        float: left;
+        margin-top: 0px;
+        margin-left: 104px;
+        img{
+            height: 490px;
+            width: auto;
+        }
+    }
+}
+.dots_black{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+    img{
+        width: 260px;
+    }
+    @include responsive(tablets){
+        margin-left: 150px;
+    }
+    @include responsive(large_pc){
+        float: left;
+        visibility: hidden;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        img{
+            width: 1px;
+    }
+    }
+}
+.text_whoweare{
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    @include responsive(tablets){
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    @include responsive(large_pc){
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-right: 90px;
+        float: right;
+        width: 470px;
+        p{
+            font-size: 20px;
+        }
+    }
+}
+.text_whoweare_ground{
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    @include responsive(tablets){
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    @include responsive(large_pc){
+        margin-top: 65px;
+        margin-left: 104px;
+        margin-right: 90px;
+        float: left;
+        width: 470px;
+        text-align: left;
+        p{
+            font-size: 20px;
+        }
+    }
+}
+.dots_whoweare{
+    margin: 0;
+}
+.dots_less{
+    visibility: hidden;
+    img{
+        height: 1px;
+    }
+    @include responsive(large_pc){
+        visibility: visible;
+        float: left;
+        margin-left: 20px;
+
+        img{
+            height: 490px;
+        }
+    }
+}
+.dots_large{
+    visibility: hidden;
+    img{
+        height: 1px;
+    }
+    @include responsive(large_pc){
+        visibility: visible;
+        margin-right: 5px;
+        float: right;
+        img{
+            height: 740px;
+        }
+}
+}
+.dots_girl{
+    float: right;
+    margin: 0px;
+    margin-top: -300px;
+    @include responsive(large_pc){
+        overflow: hidden;
+    }
+    @include responsive(very_large_pc){
+        overflow: visible;
+    }
+}
+.dots_black_part2{
+    margin-left: 70px;
+    margin-right: 65px;
+    margin-top: 30px;
+    img{
+        width: 220px;
+    }
+    @include responsive(tablets){
+        margin-left: 270px;
+    }
+    @include responsive(large_pc){
+        visibility: hidden;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        float: left;
+        img{
+        width: 0px;
+    }
+    }
+}
+.text_whoweare_part2{
+    margin-top: 25px;
+    margin-left: 70px;
+    margin-right: 65px;
+    @include responsive(tablets){
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    @include responsive(large_pc){
+        visibility: hidden;
+        width: 1px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        float: left;
+    }
+}
+.api_screen{
+    height: 60px;
+}
+.name_block_ambasador{
+    width: auto;
+    color: $yellow;
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    @include responsive(tablets){
+        margin-top: 0px;
+    }
+    @include responsive(large_pc){
+        line-height: 40px;
+        float: left;
+        width: 460px;
+        color: $yellow;
+        margin-left: 104px;
+        margin-right: 36px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        text-align: left;
+        h2{
+            font-size: 30px;
+        }
+    }
+}
+.comein_image1200{
+    visibility: hidden;
+    float: left;
+    img{
+        height: 1px;
+        width: auto;
+    }
+    @include responsive(large_pc){
+    visibility: visible;
+    float: right;
+    margin-right: 105px;
+    margin-top: 50px;
+    img{
+        height: 350px;
+        width: auto;
+    }
+    }
+}
+.name_text_ambasador{
+    @include responsive(large_pc){
+        width: 480px;
+        float: left;
+    }
+}
+.comein_image{
+    margin-top: 50px;
+    margin-left: 52px;
+    img{
+        height: 268px;
+        width: auto;
+    }
+    @include responsive(large_pc){
+        visibility: hidden;
+        float: right;
+        margin-top: 0px;
+        margin-left: 0px;
+        img{
+            height: 1px;
+            width: auto;
+        }
+    }
+}
+.btn_login_ground{
+    margin-left: 74px;
+    margin-right: 74px;
+    margin-top: 40px;
+    a{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 40px;
+        background-color: $white;
+        color: $yellow;
+        border: 3px solid $yellow;
+        border-color: $yellow;
+        text-decoration: none;
+        padding: 14px 45px 12px 45px;
+        border-radius: 100px;
+        &:hover{
+            background-color: $yellow;
+            color:$white; 
+        }
+
+    }
+    @include responsive(large_pc){
+        float: left;
+        margin-left: 220px;
+        margin-right: 74px;
+        margin-top: 78px;
+    }
+}
+
+.footer_contact{
+    width: auto;
+    color: $yellow;
+    margin-left: 80px;
+    margin-top: 50px;
+    h2{
+        p{  
+            margin-top: 5px;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            color: #707070;
+            font-size: 20px;
+        }
+    }
+    @include responsive(tablets){
+        margin-left: 300px;
+    }
+    @include responsive(large_pc){
+        position:static;
+        float: right;
+        text-align: right;
+        margin-left: 80px;
+        margin-right: 104px;
+        margin-top: 150px;
+        
+    }
+}
+.girl{
+    visibility: hidden;
+    img{
+
+        height: 0px;
+        width: auto;
+    }
+    
+    @include responsive(large_pc){
+        visibility: visible;
+        float: right;
+        width: 400px;     //
+        img{
+
+            height: 740px;
+            width: auto;
+        }
+    }
+}
+
+.part1_list{
+    @include responsive(large_pc){
+    margin-left: 120px;
+    margin-right: 120px;
+    li{
+        height: 70px;
+        margin-bottom: 20px;
+    }
+    }
+}
+.part2_list{
+    @include responsive(large_pc){
+    margin-left: 0px;
+    margin-right: 120px;
+    }
+}
+
+.name_whoweare{
+    width: auto;
+    color: $yellow;
+    margin-left: 65px;
+    margin-top: 100px;
+    @include responsive(tablets){
+        margin-left: 300px;
+        margin-top: 0px;
+    }
+    @include responsive(large_pc){
+        float: right;
+        margin-right: 323px;
+        margin-left: 0px;
+        margin-top: 130px;
+        h2{
+            font-size: 30px;
+        }
+    }
+}
+
+
+// Page 2
+.form_part_left{
+    @include responsive(large_pc){
+        width: 500px;
+        float: left;
+    }
+}
+.form_part_right{
+    @include responsive(large_pc){
+        width: 500px;
+        float: right;
+    }
+}
+.name_block_ambasador_sign_in{
+    @include responsive(large_pc){
+        line-height: 40px;
+        float: right;
+        width: 460px;
+        color: $yellow;
+        margin-left: 0px;
+        margin-right: 91px;
+        margin-top: 104px;
+        margin-bottom: 0px;
+        text-align: left;
+        h1{
+            color: $black;
+            font-size: 30px;
+        }
+        p{  
+            color: $black;
+        }
+    }
+  
+}
+.name_block_ambasador_sign_in_page_3{
+    visibility: hidden;
+    height: 1px;
+    @include responsive(large_pc){
+        visibility: visible;
+        line-height: 40px;
+        float: right;
+        width: 460px;
+        color: $yellow;
+        margin-left: 0px;
+        margin-right: 104px;
+        margin-top: 70px;
+        margin-bottom: 0px;
+        text-align: left;
+        h1{
+            color: $black;
+            font-size: 30px;
+        }
+        p{  
+            color: $black;
+        }
+    }
+    @include responsive(very_large_pc){
+    }
+}
+.slogan_sign_in{
+    margin-top: 90px;
+    margin-left: 40px;
+    width: 278px;
+    @include responsive(tablets){
+        max-width: 350px;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    @include responsive(large_pc){
+        width: 390px;
+        float: left;
+        margin-top: 1px;
+        margin-left: -40px;
+        max-width: 390px;
+        text-align: left;
+    }
+}
+.slogan_sign_in_page_3{
+    margin-top: 1px;
+    margin-left: 40px;
+    width: 278px;
+    @include responsive(tablets){
+        max-width: 350px;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    @include responsive(large_pc){
+        width: 390px;
+        float: left;
+        margin-bottom: 40px;
+        margin-top: -150px;
+        margin-left: -40px;
+        max-width: 390px;
+        text-align: left;
+    }
+}
+.name_block_form_text{
+    margin-top: 50px;
+    margin-bottom: 120px;
+    margin-left: 40px;
+    width: 278px;
+    p{
+        font-size: 20px;
+    }
+    @include responsive(tablets){
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+    }
+    @include responsive(large_pc){
+        margin-bottom: 12px;
+        margin-top: 20px;
+        max-width: 500px;
+        width: 500px;
+        float: right;
+        margin-left: 0px;
+        line-height: normal;
+    }
+}
+.name_block_form_text_page3{
+    margin-top: 50px;
+    margin-bottom: 120px;
+    margin-left: 40px;
+    width: 278px;
+    p{
+        font-size: 20px;
+    }
+    @include responsive(tablets){
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+    }
+    @include responsive(large_pc){
+        margin-bottom: 12px;
+        margin-top: -52px;
+        max-width: 500px;
+        width: 450px;
+        margin-left: -40px;
+        line-height: normal;
+    }
+}
+.name_form{
+    margin-top: 30px;
+    margin-left: 27px;
+    @include responsive(large_pc){
+        margin-top: 20px;
+        width: 230px;
+        margin-left: 118px;
+        margin-right: 200px;
+        float: left;
+    }
+}
+.name_form_right{
+    margin-top: 30px;
+    margin-left: 27px;
+    @include responsive(large_pc){
+        margin-top: 24px;
+        margin-right: 280px;
+        width: 310px;
+        float: right;
+    }
+}
+.n_input{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 12px;
+    padding: 12px 0px 12px 13px;
+    width: 328px;
+    border-radius: 15px;
+    border: solid $yellow;
+    border-width: 1.5px;
+    @include responsive(tablets){
+        width: 100%;
+        max-width: 700px;
+         
+     }
+    @include responsive(large_pc){
+        width: 328px;
+        margin-left: 104px;
+    }
+}
+.n_input_right{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 12px;
+    padding: 12px 0px 12px 13px;
+    width: 328px;
+    border-radius: 15px;
+    border: solid $yellow;
+    border-width: 1.5px;
+    @include responsive(tablets){
+        width: 100%;
+        max-width: 700px;
+        margin-top: 9px;
+        margin-left: 104px;
+        margin-right: 50px;
+        margin-bottom: 25px;
+        float: right;
+    }
+    @include responsive(large_pc){
+        width: 328px;
+        max-width: 328px;
+        margin-top: 9px;
+        margin-bottom: 0px;
+        margin-left: 104px;
+        margin-right: 280px;
+        float: right;
+    }
+}
+.radio_button{
+    margin-left: 25px;
+    margin-top: 30px;
+    label{
+        font-size: 20px;
+        margin-left: 17px;
+    }
+    @include responsive(large_pc){
+        margin-right: 420px;
+        width: 180px;
+        float: right;
+    }
+}
+.radio_elements{
+    margin-bottom: 15px;
+    input{
+        color: $yellow;
+        width: 1em;
+        height: 1em;
+        border: none;
+    }
+}
+
+
+
+
+// Page 3
+.school_and_input{
+    @include responsive(large_pc){
+    width: 350px;
+    }
+}
+.about_cand_textare_name1{
+    @include responsive(large_pc){
+    width: 1000px;
+    }
+}
+.about_cand_textare_name2{
+    @include responsive(large_pc){
+    width: 1000px;
+    }
+}
+.cv_text_button{
+    @include responsive(large_pc){
+    width: 350px;
+    }
+}
+
+.name_block_form{
+    float: left;
+    margin-left: 75px;
+    padding-top: 4px;
+    @include responsive(large_pc){
+        padding-top: 4px;
+        margin-left: 104px;
+        h2{
+            font-size: 30px;
+        }
+    }
+}
+.name_block_form_page_2{
+    float: left;
+    margin-left: 75px;
+    padding-top: 4px;
+    @include responsive(large_pc){
+        padding-top: 80px;
+        margin-left: 104px;
+        h2{
+            font-size: 30px;
+        }
+    }
+}
+.color_numbers{
+    display: flex;
+    float: left;
+    margin-left: 20px;
+    .sign_in_number_2{
+        margin-left: 13px;
+    }
+    @include responsive(large_pc){
+        margin-top: 4px;
+        margin-left: 25px;
+    }
+}
+.color_numbers_2page{
+    display: flex;
+    float: left;
+    margin-left: 20px;
+    .sign_in_number_2{
+        margin-left: 13px;
+    }
+    @include responsive(large_pc){
+        margin-top: 80px;
+        margin-left: 25px;
+    }
+}
+.name_and_numbers{
+    margin-top: 40px;
+    height: 30px;
+    @include responsive(large_pc){
+        margin-top: 65px;
+        margin-bottom: 20px;
+        float: left;
+        width: 500px;
+    }
+
+}
+.name_and_numbers_sigh_in{
+    margin-top: 40px;
+    height: 30px;
+    @include responsive(large_pc){
+        margin-bottom: 20px;
+        width: 500px;
+    }
+
+}
+.school{
+    margin-top: 50px;
+    margin-left: 27px;
+    @include responsive(large_pc){
+        margin-left: 105px;
+        float: left;
+    }
+}
+.school_form{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 12px;
+    padding: 12px 0px 12px 13px;
+    width: 328px;
+    border-radius: 15px;
+    border: solid $yellow;
+    border-width: 1.5px;
+    @include responsive(tablets){
+        width: 100%;
+        max-width: 700px;
+        margin-top: 9px;
+        margin-left: 104px;
+        margin-right: 50px;
+        margin-bottom: 25px;
+        float: right;
+    }
+    @include responsive(large_pc){
+        width: 325px;
+        max-width: 325px;
+        margin-top: 9px;
+        margin-left: 104px;
+        margin-right: 50px;
+        margin-bottom: 25px;
+        float: left;
+    }
+}
+input[type="text"]::-webkit-input-placeholder {
+    font-family: 'Rajdhani', sans-serif;
+    color: #707070;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 0px;
+}
+.organization{
+    margin-top: 30px;
+    margin-left: 27px;
+    @include responsive(large_pc){
+        float: left;
+        margin-left: 105px;
+    }
+}
+.organization_textarea{
+    padding: 15px 0px 0px 13px;
+    font-family: 'Rajdhani', sans-serif;
+    border: solid $yellow;
+    border-width: 1.5px;
+    background: $white; 
+    resize: none;
+    width: 328px;
+    height: 162px;
+    font-size:20px;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+    @include responsive(tablets){
+        width: 100%;
+        max-width: 700px;
+        margin-top: 9px;
+        margin-left: 104px;
+        margin-right: 50px;
+        margin-bottom: 25px;
+        float: right;
+    }
+    @include responsive(large_pc){
+        height: 40px;
+        width: 990px;
+        max-width: 990px;
+        margin-top: 9px;
+        margin-left: 104px;
+        margin-right: 50px;
+        margin-bottom: 25px;
+        float: left;
+    }
+}
+
+.about_candidat{
+    margin-top: 30px;
+    margin-left: 27px;
+    @include responsive(large_pc){
+        margin-left: 105px;
+        float: left;
+    }
+}
+
+.about_candidat_textarea{
+    padding: 15px 0px 0px 13px;
+    font-family: 'Rajdhani', sans-serif;
+    border: solid $yellow;
+    border-width: 1.5px;
+    background: $white; 
+    resize: none;
+    width: 328px;
+    height: 162px;
+    font-size:20px;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+    @include responsive(tablets){
+        width: 100%;
+        max-width: 700px;
+        margin-top: 9px;
+        margin-left: 104px;
+        margin-right: 50px;
+        margin-bottom: 25px;
+        float: right;
+    }
+    @include responsive(large_pc){
+        height: 40px;
+        width: 990px;
+        max-width: 990px;
+        margin-top: 9px;
+        margin-left: 104px;
+        margin-right: 50px;
+        margin-bottom: 25px;
+        float: left;
+    }
+}
+.cv_text{
+    margin-top: 30px;
+    margin-left: 27px;
+    @include responsive(large_pc){
+        margin-left: 105px;
+        width: 220px;
+        float: left;
+    }
+}
+.add_button{
+    float: left;
+    margin-left: 15px;
+    margin-top: 24px;
+    a{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 40px;
+        background-color: $white;
+        color: $yellow;
+        border: 2px solid $yellow;
+        border-color: $yellow;
+        text-decoration: none;
+        padding: 11px;
+        border-radius: 15px;
+        &:hover{
+            background-color: $yellow;
+            color:$white; 
+        }
+
+    }
+    @include responsive(large_pc){
+        margin-left: 105px;
+    }
+        
+    
+}
+.cv_name{
+    float: left;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 12px;
+    padding: 11px 0px 11px 0px;
+    width: 205px;
+    border-radius: 15px;
+    border: solid $yellow;
+    border-width: 1.5px;
+}
+.btn_send{
+    margin-left: 74px;
+    margin-right: 74px;
+    margin-top: 140px;
+    a{
+        font-family: 'Josefin Sans', sans-serif;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 40px;
+        background-color: $yellow;
+        color: $white;
+        border: 3px solid $yellow;
+        border-color: $yellow;
+        text-decoration: none;
+        padding: 14px 67px 12px 67px;
+        border-radius: 100px;
+        &:hover{
+            background-color: $yellow;
+            color:$white; 
+        }
+
+    }
+    @include responsive(tablets){
+        width: 300px;
+        margin-top: 80px;
+        margin-left: 104px;
+        margin-right: 190px;
+        margin-bottom: 80px;
+        float: right;
+    } 
+    @include responsive(large_pc){
+        width: 300px;
+        margin-top: 30px;
+        margin-left: 104px;
+        margin-right: 13px;
+        margin-bottom: 80px;
+        float: right;
+    } 
+}
+
+#instafeed {
+    max-width:1080px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    a {
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 50%;
+      background: white;
+      
+      
+      img {
+        display: block;
+        width: 270px;
+        max-width:270px;
+        height: 270px
+        
+      }
+    }
+  }
+  #instafeed-container{
+      max-width: 360px;
+
+      margin-left: auto;
+      margin-right: auto;
+      float: left;                                                  ///ssslader 
+      display: flex;
+      width: 300px;
+      img{
+          padding-left: 10px;
+          margin-top: 0px;
+          width: 220px;
+          height: auto;
+          @include responsive(large_pc){
+            
+          }
+
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #slider { /*положение слайдера*/
+    margin: 0 auto;
+    position: relative;
+	text-align: center;
+    top: 10px;
+    width: 360px;
+    max-width: 360px;
+    @include responsive(tablets){
+        
+    }
+}
+
+
+#slides article{ /*все изображения справа друг от доруга*/
+    max-width: 360px;
+	width: 360px;
+    float: left;
+    @include responsive(large_pc){
+        max-width: 1200px;
+	    width: 1200px;
+    }
+}
+
+#slides .image{ /*устанавливает общий размер блока с изображениями*/
+	width: 500%;
+	line-height: 0;
+}
+
+#overflow{ /*сркывает все, что находится за пределами этого блока*/
+	width: 300px;
+    overflow: hidden;
+    @include responsive(large_pc){
+    width: 900px;
+    overflow: hidden;
+    }
+}
+
+article img{ /*размер изображений слайдера*/
+    margin-left: 60px;
+    margin-right: 10px;
+	width: 230px;
+}
+
+#desktop:checked ~ #slider{ /*размер всего слайдера*/
+    max-width: 360px;
+    @include responsive(tablets){
+        max-width: 768px;
+    } 
+    @include responsive(large_pc){
+        max-width: 1200px;
+    }                  /*максимальнная длинна*/
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+	background: url('images/logo/coursor_left.svg') no-repeat; /*заливка фона картинкой без повторений*/
+	float: left;
+	margin: 0px 0 0 4px; /*сдвиг влево*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2),
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1){
+	background: url('images/logo/cursor_right.svg') no-repeat; /*заливка фона картинкой без повторений*/
+	float: right;
+	margin: 0px -30px 0 0px; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+	cursor: pointer;
+}
+
+.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+.all{
+    width: 400px;
+    @include responsive(tablets){
+        width: unset;
+    }
+    @include responsive(large_pc){
+        width: 600px;  
+    }
+}
+
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .image{
+	margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+    margin-left: -100%;
+    @include responsive(large_pc){
+        margin-left: -33%;
+    } 
+}
+
+#switch3:checked ~ #slides .image{
+    margin-left: -200%;
+    @include responsive(large_pc){
+        margin-left: -66%;
+    } 
+}
+
+#switch4:checked ~ #slides .image{
+    margin-left: -300%;
+    @include responsive(large_pc){
+        margin-left: -100%;
+    } 
+}
+
+#switch5:checked ~ #slides .image{
+    margin-left: -400%;
+    @include responsive(large_pc){
+        margin-left: -133%;
+    } 
+}
+
+#controls{ /*положение блока всех управляющих элементов*/
+	margin: -30% 0 0 0;
+	width: 100%;
+    height: 50px;
+    @include responsive(large_pc){
+        width: 265%;
+    }
+}
+
+
+#slides{
+    margin-top: 70px;
+    @include responsive(tablets){
+        margin-top: 40px;
+    }
+    @include responsive(large_pc){
+        margin-top: 70px;
+    }
+    
+}
+
+#slides .image{ /*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#controls label:hover{ /*прозрачность стрелок при наведении*/
+	opacity: 0.6;
+}
+
+#controls label{ /*прозрачность стрелок при отводе курсора*/
+	transition: opacity 0.2s ease-out;
+}

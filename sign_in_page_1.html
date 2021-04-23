@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YP landing page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="logo_sign_in">
+            <img src="images/logo/YP_kolor.svg" alt="logo">
+        </div>
+    </div>
+
+
+    <div id ="block_form_page_1">
+        <form action="mail.php" method="POST">
+        <div class="name_block_ambasador_sign_in">
+            <div class="slogan_sign_in">
+                <h1>
+                    Zostań Ambasadorem w <strong>Young Professionals!</strong>
+                </h1>
+            </div>
+            <div class="name_block_form_text">
+                <p>
+                    Poszukujemy ambasadorów na największych uczelniach w Polsce. Jeśli chcesz dołączyć 
+                    do naszego zespołu, wypełnij poniższy formularz i daj się poznać.
+                </p>
+            </div>
+        </div>
+        <div class="name_and_numbers">
+            <div class="name_block_form">
+                <h2>
+                    FORMULARZ
+                </h2>
+            </div>
+            <div class="color_numbers">
+                <div class="sign_in_number_1">
+                    <img src="images/logo/sign_in_number_1.svg" alt="logo">
+                </div>
+                <div class="sign_in_number_2">
+                    <img src="images/logo/sign_in_number_2.svg" alt="logo">
+                </div>
+            </div>
+        </div>
+        <div class="form_part_left">
+            <div class="name_form">
+                <h3>
+                    Imię
+                </h3>
+            </div>
+            <input type="text" name="user_name" placeholder="Imię" class="n_input" required />
+            <div class="name_form">
+                <h3>
+                    Nazwisko
+                </h3>
+            </div>
+            <input type="text" name="user_surname" placeholder="Nazwisko" class="n_input" required />
+            <div class="name_form">
+                <h3>
+                    Numer telefonu
+                </h3>
+            </div>
+            <input type="text" name="user_phone" placeholder="Numer telefonu" class="n_input" required />
+            <div class="name_form">
+                <h3>
+                    E-mail
+                </h3>
+            </div>
+            <input type="text" name="user_email" placeholder="E-mail" class="n_input" required />
+        </div>
+        <div class="form_part_right">
+            <div class="name_form_right">
+                <h3>
+                    Nazwa konta na instagramie
+                </h3>
+            </div>
+            <input type="text" name="user_nikcname" placeholder="Nazwa konta na instagramie" class="n_input_right" required />
+            <div class="name_form_right">
+                <h3>
+                    Skąd dowiedziałe/aś się o rekrutacji?
+                </h3>
+            </div>
+
+            <div class="radio_button">
+                <div class="radio_elements">
+                    <input type="radio" id="louie" name="instagram" value="louie">
+                    <label for="louie">Instagram</label>
+                </div>
+                <div class="radio_elements">
+                    <input type="radio" id="louie" name="facebook" value="louie">
+                    <label for="louie">Facebook</label>
+                </div>
+                <div class="radio_elements">
+                    <input type="radio" id="louie" name="linkedin" value="louie">
+                    <label for="louie">Linkedin</label>
+                </div>
+                <div class="radio_elements">
+                    <input type="radio" id="louie" name="friends" value="louie">
+                    <label for="louie">Od znajomych </label>
+                </div>
+                <div class="radio_elements">
+                    <input type="radio" id="louie" name="another" value="louie">
+                    <label for="louie">Inna odpowiedź</label>
+                </div>
+            </div>
+        </div>
+        <div class="btn_next">
+            <a onclick = "hideDiv()">DALEJ</a>
+        </div>
+    </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id ="block_form_page_2">
+        <form action="mail.php" method="POST">
+            <div class="name_block_ambasador_sign_in_page_3">
+                <div class="slogan_sign_in_page_3">
+                    <h1>
+                        Zostań Ambasadorem w <strong>Young Professionals!</strong>
+                    </h1>
+                </div>
+                <div class="name_block_form_text_page3">
+                    <p>
+                        Poszukujemy ambasadorów na największych uczelniach w Polsce. Jeśli chcesz dołączyć 
+                        do naszego zespołu, wypełnij poniższy formularz i daj się poznać.
+                    </p>
+                </div>
+            </div>
+            <div class="name_and_numbers_sigh_in">
+                <div class="name_block_form_page_2">
+                    <h2>
+                        FORMULARZ
+                    </h2>
+                </div>
+                <div class="color_numbers_2page">
+                    <div class="sign_in_number_1">
+                        <img src="images/logo/sign_in_number_1_white.svg" alt="logo">
+                    </div>
+                    <div class="sign_in_number_2">
+                        <img src="images/logo/sign_in_number_2_yellow.svg" alt="logo">
+                    </div>
+                </div>
+            </div>
+            <div class="school_and_input">
+                <div class="school">
+                    <h3>
+                        Uczelnia, na której studiujesz
+                    </h3>
+                </div>
+                <input type="text" name="school" placeholder="Uczelnia, na której studiujesz" class="school_form" required />
+            </div>
+            <div class="about_cand_textare_name1">
+                <div class="organization">
+                    <h3>
+                        Działasz w organizacjach studenckich? Jeśli tak, czym się tam zajmujesz?
+                    </h3>
+                </div>
+                <textarea rows="4" cols="50" type = "text" name="organization" placeholder= "..." class="organization_textarea" required></textarea>
+            </div>
+            <div class="about_cand_textare_name2">
+                <div class="about_candidat">
+                    <h3>
+                        Opowiedz nam o sobie. Dlaczego właśnie Ty musisz zostać naszym ambasadorem?
+                    </h3>
+                </div>
+                <textarea rows="4" cols="50" type = "text" name="about_candidat" placeholder= "..." class="about_candidat_textarea" required></textarea>
+            </div>
+            <div class="cv_text_button">
+                <div class="cv_text">
+                    <h3>
+                        Prześlij nam swoje CV!
+                    </h3>
+                </div>
+                <div class="add_button">
+                    <a href="index.html">Przeglądaj</a>
+                </div>
+            </div>
+            <input type="text" name="cv" placeholder="CV" class="cv_name" readonly required />
+            <div class="btn_send">
+                <a type = "submit">WYŚLIJ</a>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src= "hide.js"></script>
+</body>
+</html>

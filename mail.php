@@ -58,7 +58,7 @@ echo 'не отмечено';
         if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: kontakt1.html');
+    header('location: index.html');
 }
  }
 ?>

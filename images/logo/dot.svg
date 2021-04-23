@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5" viewBox="0 0 17.5 17.5">
+  <g id="Компонент_1_14" data-name="Компонент 1 – 14" transform="translate(0 0.5)">
+    <circle id="Эллипс_1" data-name="Эллипс 1" cx="7.5" cy="7.5" r="7.5" transform="translate(0 2)" fill="#ffb84b"/>
+    <circle id="Эллипс_2" data-name="Эллипс 2" cx="7.5" cy="7.5" r="7.5" transform="translate(2)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>

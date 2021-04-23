@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51.75" height="51.75" viewBox="0 0 51.75 51.75">
+  <g id="Сгруппировать_50" data-name="Сгруппировать 50" transform="translate(-902 -3546.25)">
+    <g id="Сгруппировать_13" data-name="Сгруппировать 13" transform="translate(902 3547)">
+      <circle id="Эллипс_7" data-name="Эллипс 7" cx="24" cy="24" r="24" transform="translate(0 3)" fill="#ffb84b"/>
+      <circle id="Эллипс_11" data-name="Эллипс 11" cx="24" cy="24" r="24" transform="translate(3)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <g id="Сгруппировать_9" data-name="Сгруппировать 9" transform="translate(918.479 3563.416)">
+      <rect id="Прямоугольник_22" data-name="Прямоугольник 22" width="3.982" height="12.81" transform="translate(0.105 5.453)" fill="#fff"/>
+      <path id="Контур_4" data-name="Контур 4" d="M568.456,193.987a2,2,0,1,0,2.1,1.991A1.977,1.977,0,0,0,568.456,193.987Z" transform="translate(-566.334 -193.987)" fill="#fff"/>
+      <path id="Контур_5" data-name="Контур 5" d="M610.986,224.574a4.6,4.6,0,0,0-3.956,2.07h-.078l-.184-1.781h-3.457c.052,1.153.1,2.489.1,4.086v8.723H607.4v-7.387a2.867,2.867,0,0,1,.131-1,2.186,2.186,0,0,1,2.043-1.493c1.441,0,2.017,1.126,2.017,2.777v7.1h3.982V230.1C615.57,226.329,613.606,224.574,610.986,224.574Z" transform="translate(-597.048 -219.409)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
